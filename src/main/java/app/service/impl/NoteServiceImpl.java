@@ -25,7 +25,7 @@ public class NoteServiceImpl implements NoteService {
     	log.info("getAllNotes() start");
     	List<Note> noteLst = noteRepository.findAll();
     	log.info("getAllNotes() end - returnVal: " + noteLst);
-		return null;
+		return noteLst;
 	}
 
     @Transactional(propagation = Propagation.REQUIRED)
