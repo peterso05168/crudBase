@@ -1,5 +1,3 @@
-# Spring Boot, MySQL, JPA, Hibernate Rest API Tutorial
-
 Java Web application using Spring Boot, Mysql, JPA and Hibernate.
 
 ## Requirements
