@@ -1,12 +1,21 @@
-package com.example.easynotes.exception;
+package app.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import lombok.Getter;
 
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
 public class ResourceNotFoundException extends RuntimeException {
-    private String resourceName;
+
+	private static final long serialVersionUID = -2519254109026113935L;
+	
+	@Getter
+	private String resourceName;
+	
+	@Getter
     private String fieldName;
+	
+	@Getter
     private Object fieldValue;
 
     public ResourceNotFoundException( String resourceName, String fieldName, Object fieldValue) {
@@ -14,17 +23,5 @@ public class ResourceNotFoundException extends RuntimeException {
         this.resourceName = resourceName;
         this.fieldName = fieldName;
         this.fieldValue = fieldValue;
-    }
-
-    public String getResourceName() {
-        return resourceName;
-    }
-
-    public String getFieldName() {
-        return fieldName;
-    }
-
-    public Object getFieldValue() {
-        return fieldValue;
     }
 }
