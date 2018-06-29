@@ -15,9 +15,6 @@ Java Web application using Spring Boot, Mysql, JPA and Hibernate.
 **1. Clone the application**
 
 **2. Create Mysql database**
-```bash
-create database notes_app
-```
 
 **3. Change mysql username and password as per your installation**
 
