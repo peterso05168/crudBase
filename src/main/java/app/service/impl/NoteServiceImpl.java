@@ -13,7 +13,6 @@ import app.repository.NoteRepository;
 import app.service.NoteService;
 import lombok.extern.slf4j.Slf4j;
 
-
 @Slf4j
 @Service
 public class NoteServiceImpl implements NoteService {
